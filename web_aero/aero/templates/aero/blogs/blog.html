@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>
+            Blogs | Aeromodelling Club
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+            <link rel="stylesheet" href = "../../../static/aero/css/nav.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    </head>
+        <style>
+            .background {
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: #141414 0% 0% no-repeat padding-box;
+            opacity: 1;
+            }
+            .back-icon {
+                
+                transform: matrix(0, 1, -1, 0, 0, 0);
+                background: #F1F1F1 0% 0% no-repeat padding-box;
+                opacity: 1;
+            }
+            .first-image {
+                
+margin-top: 10px;        
+width: 100%;
+height: 100%;
+background: #37026E 0% 0% no-repeat padding-box;
+opacity: 1;
+margin-bottom: 10px;
+
+            }
+            .blog-heading {
+                
+                font: Regular 29px/38px Arial;
+letter-spacing: 4.67px;
+color: #01ACBE;
+opacity: 1;
+            }
+            .blog-author {
+                
+                
+                font: Regular 29px/38px Arial;
+letter-spacing: 4.67px;
+color: #01ACBE;
+opacity: 1;
+            }
+          
+            .blog-subtitle {
+                
+
+            color: #01ACBE;
+
+
+            }
+
+            .centerstuff {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p {
+                color: var(--unnamed-color-ffffff);
+text-align: left;
+font: Regular 29px/38px Arial;
+letter-spacing: 4.67px;
+color: #FFFFFF;
+opacity: 1;
+            }
+        </style>
+
+    <body class="background">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand">Aeromodelling Club, IITB</a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample"
+        aria-controls="navbarsExample" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarsExample">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Projects</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown03">
+                    <a class="dropdown-item" href="#">ITSP</a>
+                    <a class="dropdown-item" href="#">Others</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gallery<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+        
+    <div class="container">
+        
+        <div class="row" style="padding-top: 68px;">
+            <div class="col-sm-4">
+            
+            </div>
+            <div class="col-sm-8">
+                <h1 class="blog-heading" style="text-align: center;">{{ blog.title }}</h1>
+                <br />
+                <h4 class="blog-subtitle" style="text-align: center;">Subtitle</h4>
+                <br />
+                <h6 class="blog-author" style="text-align: center;">{{ blog.author }}</h6>
+                <div class="row">
+                    <p class="text-justify">{{ blog.paragraph1 }}</p>
+                </div>
+                <br />
+                <div class="row">
+                    <p class="text-justify">{{ blog.paragraph2 }}</p>
+                </div>
+                <br />
+                <div class="row">
+                    <p class="text-justify">{{ blog.paragraph3 }}</p>
+                </div>
+                <br />
+                <div class="row">
+                    <p class="text-justify">{{ blog.paragraph4 }}</p>
+                </div>
+                <br />
+                <div class="row">
+                    <p class="text-justify">{{ blog.paragraph5 }}</p>
+                </div>
+                <br />
+                <a href="#">
+                    <h3>
+                        Share on FaceBook
+                        
+                    </h3>
+                </a>
+            </div>
+      
+        </div>
+        
+    </div>
+    
+    </body>
+</html>

@@ -1,0 +1,96 @@
+@font-face {
+  font-family: wallblog;
+  src: url('../fonts/wall_of_blogs.ttf');
+}
+.blogwall{
+
+font-family: wallblog;
+
+}
+
+h1 {
+        text-align: center;
+        font: Regular 60px/24px Azonix;
+        letter-spacing: 0px;
+        color: #F1F9FF;
+        opacity: 1;
+        text-align:center !important;
+    }
+
+.background {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: #141414 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+
+.blog-wall-flower {
+
+        width: 100%;
+        padding: 10px;
+        background-color: aqua;
+    }
+
+
+
+.card-title {
+        padding-left: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.918);
+        color: #03dac5e3;
+        height: 60px;
+    }
+  .card{
+  border: 0;
+  
+  }
+.truncate-overflow {
+  --max-lines: 3;
+  position: relative;
+  max-height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden;
+  padding-right: 1rem; /* space for ellipsis */
+}
+.truncate-overflow::before {
+  position: absolute;
+  content: "...";
+  /* tempting... but shows when lines == content */
+  /* top: calc(var(--lh) * (var(--max-lines) - 1)); */
+  
+  /*
+  inset-block-end: 0;
+  inset-inline-end: 0;
+  */
+  bottom: 0;
+  right: 0;
+}
+.truncate-overflow::after {
+  content: "";
+  position: absolute;
+  /*
+  inset-inline-end: 0;
+  */
+  right: 0;
+  /* missing bottom on purpose*/
+  width: 1rem;
+  height: 1rem;
+  background: white;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
+ a{
+ 
+ color: white;
+ 
+ }
+ a:hover{
+ 
+ }
+ 
